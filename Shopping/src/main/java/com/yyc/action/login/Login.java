@@ -29,7 +29,6 @@ public class Login {
             UsernamePasswordToken token = 
             		new UsernamePasswordToken(user.getEmail(),user.getPassword());//存储用户名和密码的对象
             token.setRememberMe(true);
-            System.out.println(user.getEmail() + "  " + user.getPassword());
             try {
                 currentUser.login(token);//进行登录
             } 
@@ -37,13 +36,13 @@ public class Login {
                 //unexpected condition?  error?
             	//登录失败
             	map.put("error", "账号或密码错误，请重新输入");
-            	return "login";
+            	return "login/login";
             }
         }
         Session session = currentUser.getSession();
         session.setAttribute("loginuser", user.getEmail());
 		
-        return "index";
+        return "common/index";
 	}
 }
 

@@ -65,7 +65,7 @@ public class MyRealm extends AuthorizingRealm{
 		return info;
 	}
 	public static void main(String[] args) {
-		SimpleHash simpleHash=new SimpleHash("Md5", "123", "33", 1024);
+		SimpleHash simpleHash=new SimpleHash("Md5", "123", "boogie@admin.com", 1024);
 		System.out.println(simpleHash);
 	}
 }

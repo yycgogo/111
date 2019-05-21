@@ -12,6 +12,10 @@ import java.io.Serializable;
 */
 public class SysUser implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int id;//编号
 	private String email;//邮箱
 	private String password;//密码
