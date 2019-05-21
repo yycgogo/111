@@ -68,7 +68,7 @@
                 </a>
                 <ul class="sub-menu">
                     <li date-refresh="1">
-                        <a _href="<%=request.getContextPath()%>/member_del">
+                        <a _href="<%=request.getContextPath()%>/user_del">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>删除用户</cite>
                             

@@ -4,10 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class Member_del {
+public class UserAction {
 	
-	@RequestMapping("/member_del")
+	@RequestMapping("/user_del")
 	public String del(){
-		return "member/member-del";
+		return "user/user-del";
 	}
 }

@@ -14,7 +14,7 @@ import com.yyc.pojo.SysUser;
 
 @Controller
 @RequestMapping("/syslogin")
-public class Login {
+public class LoginAction {
 	@RequestMapping("/loginjsp")
 	public String loginjsp(){
 		return "login/login";
