@@ -2,74 +2,85 @@ package com.yyc.pojo;
 
 import java.io.Serializable;
 
-/**  
-* Title: SysUser.java 
-* Description: 后台用户信息
-* Copyright: Copyright (c) 2018    
-* @author zhh  
-* @date 2019年4月23日  
-* @version 1.0  
-*/
+/**
+ * Title: SysUser.java Description: 后台用户信息 Copyright: Copyright (c) 2018
+ * 
+ * @author zhh
+ * @date 2019年4月23日
+ * @version 1.0
+ */
 public class SysUser implements Serializable {
-	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private int id;//编号
-	private String email;//邮箱
-	private String password;//密码
+	private int id;// 编号
+	private String email;// 邮箱
+	private String password;// 密码
+
 	/**
 	 * @return the id
 	 */
 	public int getId() {
 		return id;
 	}
+
 	/**
 	 * @param id the id to set
 	 */
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	/**
 	 * @return the email
 	 */
 	public String getEmail() {
 		return email;
 	}
+
 	/**
 	 * @param email the email to set
 	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 	/**
 	 * @return the password
 	 */
 	public String getPassword() {
 		return password;
 	}
+
 	/**
 	 * @param password the password to set
 	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	/**
 	 * 
 	 */
 	public SysUser() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-	/* (non-Javadoc)
+
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
 		return "SysUser [id=" + id + ", email=" + email + ", password=" + password + "]";
 	}
-	/* (non-Javadoc)
+
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -81,7 +92,10 @@ public class SysUser implements Serializable {
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		return result;
 	}
-	/* (non-Javadoc)
+
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -107,6 +121,5 @@ public class SysUser implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
+
 }
