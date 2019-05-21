@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class Member_del {
+	
 	@RequestMapping("/member_del")
 	public String del(){
-		return "member-manage/member-del";
+		return "member/member-del";
 	}
 }

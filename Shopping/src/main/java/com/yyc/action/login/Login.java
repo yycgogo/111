@@ -17,7 +17,7 @@ import com.yyc.pojo.SysUser;
 public class Login {
 	@RequestMapping("/loginjsp")
 	public String loginjsp(){
-		return "login";
+		return "login/login";
 	}
 	@RequestMapping("/dologin")
 	public String dologin(SysUser user,Map<String, String> map){
